@@ -13,9 +13,9 @@ def youtube():
 
         img_url = page.locate_selector('img').screen(save_as='temp.jpg')
 
-        print(img_url)
-
         browser.close()
+
+        return img_url
 
 
 if __name__ == '__main__':
